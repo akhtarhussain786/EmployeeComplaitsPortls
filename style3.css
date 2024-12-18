@@ -1,0 +1,114 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Logo styling */
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Form box */
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4caf50;
+}
+
+/* Login button */
+.buttom {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #4caf50;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.buttom:hover {
+    background: #45a049;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* "Forget password" styling */
+h4 {
+    text-align: center;
+    font-size: 1rem;
+    color: #ff5722;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+h4:hover {
+    color: #e64a19;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .box {
+        padding: 20px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    .buttom {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+}

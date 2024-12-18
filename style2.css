@@ -1,0 +1,100 @@
+/* Reset default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f4ff, #d9e4f5);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Logo styling */
+.img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form fields */
+form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4caf50;
+}
+
+/* Button styling */
+.but {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #4caf50;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.but:hover {
+    background: #45a049;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Error prevention: Remove the <a> around button */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .box {
+        padding: 20px;
+    }
+
+    .img {
+        width: 100px;
+    }
+
+    form input {
+        font-size: 0.9rem;
+    }
+
+    .but {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+}
